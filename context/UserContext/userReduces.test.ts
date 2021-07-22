@@ -1,12 +1,9 @@
 import { reducer, useUserReducer } from "./userReducer";
 import { renderHook, act } from "@testing-library/react-hooks/server";
-import { useReducer } from "react";
 
 describe("Testing Reducer", () => {
   it("Testing UserReducer Login", () => {
-    const { result, hydrate } = renderHook(() =>
-      useReducer(reducer, { user: null })
-    );
+    const { result, hydrate } = renderHook(() => useUserReducer());
 
     hydrate();
 
