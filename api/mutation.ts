@@ -50,7 +50,7 @@ export const DELETE_NOTE = gql`
 
 export const UPDATE_STATUS = gql`
   mutation UpdateStatus($id: String!, $status: Boolean!) {
-    UpdateStatus(id: $id, status: $status) {
+    UpdateNoteStatus(id: $id, status: $status) {
       result
     }
   }

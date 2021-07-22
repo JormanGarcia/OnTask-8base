@@ -1,0 +1,6 @@
+functions:
+  UpdateNoteStatus:
+    type: resolver
+    handler:
+      code: src/resolvers/UpdateNoteStatus/handler.ts
+    schema: src/resolvers/UpdateNoteStatus/schema.graphql
